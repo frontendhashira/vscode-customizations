@@ -1,0 +1,326 @@
+{
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  // "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": false,
+  "editor.lineHeight": 1.6,
+  "editor.guides.bracketPairs": true,
+  "editor.fontLigatures": true,
+  "editor.linkedEditing": true,
+  "editor.insertSpaces": true,
+  "editor.padding.bottom": 2,
+  "editor.tabSize": 3,
+  "editor.letterSpacing": 0.5,
+  "editor.renderWhitespace": "none",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.codeLensFontFamily": "JetBrains Mono",
+  "editor.codeLensFontSize": 10,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontWeight": "300",
+  "editor.indentSize": 3,
+  "editor.wordWrap": "bounded",
+  "editor.fontSize": 15.5,
+  "editor.minimap.autohide": true,
+  "editor.wordWrapColumn": 250,
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.autoIndent": "none",
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.stylelint": "explicit",
+  //   "quickfix.biome": "explicit",
+  //   "source.organizeImports.biome": "explicit"
+  // }
+  "editor.fontFamily": "Brass Mono Regular, iosevka, Operator Mono, Fira Code iScript, MonoLisa, Victor Mono, Fira Code, JetBrains Mono, monofur for powerline, Meslo LG M Regular for Powerline, Range, Source Code Pro, Anonymous Pro, 'Courier New', monospace ",
+  "workbench.editor.enablePreview": false,
+  "html.format.wrapLineLength": 250,
+  "git.suggestSmartCommit": false,
+  "git.autofetch": true,
+  "prettier.enableDebugLogs": true,
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "terminal.integrated.macOptionIsMeta": true,
+  "terminal.integrated.lineHeight": 1,
+  "prettier.useTabs": false,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.arrowParens": "always",
+  "prettier.bracketSpacing": true,
+  "prettier.bracketSameLine": true,
+  "prettier.trailingComma": "all",
+  "prettier.printWidth": 200,
+  "prettier.tabWidth": 2,
+  "prettier.useEditorConfig": false,
+  "json.maxItemsComputed": 20000,
+  "css.validate": true,
+  "editor.foldingStrategy": "indentation",
+  "diffEditor.diffAlgorithm": "advanced",
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true,
+    "editor.colorDecorators": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "explicit",
+      "source.organizeImports.biome": "explicit",
+      "source.action.useSortedAttributes.biome": "explicit",
+      "source.action.useSortedKeys.biome": "explicit",
+      "source.fixAll.biome": "explicit"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "explicit",
+      "source.organizeImports.biome": "explicit",
+      "source.action.useSortedAttributes.biome": "explicit",
+      "source.action.useSortedKeys.biome": "explicit",
+      "source.fixAll.biome": "explicit"
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "explicit",
+      "source.organizeImports.biome": "explicit",
+      "source.action.useSortedAttributes.biome": "explicit",
+      "source.action.useSortedKeys.biome": "explicit",
+      "source.fixAll.biome": "explicit"
+    }
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "explicit",
+      "source.organizeImports.biome": "explicit",
+      "source.action.useSortedAttributes.biome": "explicit",
+      "source.action.useSortedKeys.biome": "explicit",
+      "source.fixAll.biome": "explicit"
+    }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "source.action.useSortedKeys.biome": "explicit",
+      "source.fixAll.biome": "explicit"
+    }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "all",
+    "editor.acceptSuggestionOnEnter": "off"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "diffEditor.codeLens": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": "explicit",
+      "quickfix.biome": "explicit",
+      "source.action.useSortedProperties.biome": "explicit",
+      "source.fixAll.biome": "explicit"
+    }
+  },
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[tailwindcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "diffEditor.codeLens": true,
+  "cssPeek.peekFromLanguages": [
+    "html",
+    "django-html",
+    "laravel-blade",
+    "razor",
+    "vue",
+    "blade",
+    "pug",
+    "jade",
+    "handlebars",
+    "php",
+    "twig",
+    "md",
+    "nunjucks",
+    "javascript",
+    "javascriptreact",
+    "erb",
+    "typescript",
+    "typescriptreact",
+    "HTML (Eex)",
+    "html-eex",
+    "ejs",
+    "hbs",
+    "svelte",
+    "css"
+  ],
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css",
+    "astro": "astro"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "editor.quickSuggestions": {
+    "strings": "on",
+    "comments": "on"
+  },
+  "terminal.integrated.fontFamily": "Iosevka Term Slab, Iosevka Term,  CaskaydiaCove NFM",
+  "terminal.explorerKind": "external",
+  "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.env.linux": {},
+  "terminal.integrated.env.windows": {},
+  "json.format.keepLines": false,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.tree.indent": 5,
+  "files.associations": {
+    ".js": "javascriptreact",
+    "*.jsx": "javascriptreact",
+    // "*.css": "tailwindcss",
+    "*.astro": "astro"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "editor.stickyScroll.enabled": false,
+  "indentRainbow.ignoreErrorLanguages": [
+    "*"
+  ],
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 1,
+  "indentRainbow.colors": [
+    "rgba(255,255,64,0.3)",
+    "rgba(127,255,127,0.3)",
+    "rgba(255,127,255,0.3)",
+    "rgba(79,236,236,0.3)"
+  ],
+  "workbench.startupEditor": "none",
+  "window.restoreFullscreen": true,
+  "accessibility.underlineLinks": true,
+  "accessibility.hideAccessibleView": true,
+  "editor.quickSuggestionsDelay": 5,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "material-icon-theme",
+  "codeium.enableConfig": {
+    "*": true,
+    "terminal": true,
+    "motoko": true,
+    "tailwindcss": true
+  },
+  "todo-tree.highlights.useColourScheme": true,
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "fontWeight": "thin",
+      "icon": "checklist"
+    },
+    "FIXME": {
+      "foreground": "#ffffff",
+      "iconColour": "#ff0000",
+      "background": "#ff0000",
+      "icon": "alert-fill",
+      "fontWeight": "thin"
+    }
+  },
+  "todo-tree.general.tagGroups": {
+    "FIXME": [
+      "FIXME",
+      "FIXIT",
+      "FIX"
+    ]
+  },
+  "todo-tree.regex.regex": "(//)\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
+  "editor.suggest.shareSuggestSelections": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescriptreact": "html",
+    "astro": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "editor.snippetSuggestions": "bottom",
+  "vscord.behaviour.debug": true,
+  "remote.autoForwardPortsSource": "hybrid",
+  // Monokai Pro (Filter Ristretto) | Material Theme Ocean High Contrast | One Dark Pro* Darker | Bearded Monokai | Gruvbox
+  "workbench.colorTheme": "GitHub Dark Default",
+  "quokka.automaticRestart": true,
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.formatOnType": true
+  },
+  "ruby.rubocop.executePath": "/home/ridwan/.rbenv/shims/",
+  "ruby.rubocop.onSave": true,
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "workbench.sideBar.location": "right",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "javascript": false,
+    "html": false
+  },
+  "terminal.integrated.suggest.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.autoSaveDelay": 400,
+  "cody.commandCodeLenses": true,
+  "cody.suggestions.mode": "off",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "inlineChat.hideOnRequest": true,
+  "inlineChat.enableV2": true,
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "tailwindcss"
+  ],
+  "breadcrumbs.enabled": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "vscord.status.idle.disconnectOnIdle": true,
+  "vscord.status.idle.resetElapsedTime": true,
+  "editor.suggest.showStatusBar": true,
+  "previewServer.port": 8085,
+  "vscord.behaviour.statusBarAlignment": "Left",
+  "application.shellEnvironmentResolutionTimeout": 30,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/dist",
+      "savePathReplacementPairs": null,
+    }
+  ],
+  "svgPreview.autoOpen": false,
+  "editor.cursorBlinking": "expand",
+}

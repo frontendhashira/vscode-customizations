@@ -14,12 +14,10 @@
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "GitHub Dark Default",
   "workbench.editor.empty.hint": "hidden",
-
   /** ------------ Breadcrumbs Configurations ------------ **/
   "breadcrumbs.enabled": false,
   "breadcrumbs.symbolPath": "off",
   "breadcrumbs.filePath": "on",
-
   /** ------------ Editor Settings ------------ **/
   "editor.fontFamily": "'Fira Code Retina', 'Hack Nerd Font', Monospace",
   "editor.fontSize": 16,
@@ -36,7 +34,6 @@
   "editor.minimap.enabled": false,
   "editor.wordWrap": "on",
   "editor.stickyScroll.enabled": true,
-
   /** ------------ Terminal Configurations ------------ **/
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontFamily": "'MesloLGS NF', 'Hack Nerd Font', Monospace",
@@ -44,10 +41,9 @@
   "terminal.integrated.enableMultiLinePasteWarning": "always",
   "terminal.integrated.cursorStyle": "underline",
   "terminal.integrated.cursorBlinking": true,
-
   /** ------------ Additional Configurations ------------ **/
   "vscode_custom_css.imports": [
     "file:///Users/nur/.vscode/vscode-custom/style.css",
-    "file:///Users/nur/.vscode/vscode-custom/script.js"
+    "file:///C:/Users/ridwan/.vscode/vscode-custom/script.js"
   ]
 }
