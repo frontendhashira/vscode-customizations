@@ -1,14 +1,7 @@
 {
-  "html.format.indentInnerHtml": true,
-  "html.format.indentHandlebars": true,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true
-  },
+  /** ------------ General Editor Settings ------------ **/
   // "editor.defaultFormatter": "biomejs.biome",
   "editor.formatOnSave": false,
-  "editor.lineHeight": 1.6,
   "editor.guides.bracketPairs": true,
   "editor.fontLigatures": true,
   "editor.linkedEditing": true,
@@ -24,10 +17,7 @@
   "editor.codeLensFontFamily": "JetBrains Mono",
   "editor.codeLensFontSize": 10,
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontWeight": "300",
   "editor.indentSize": 3,
-  "editor.wordWrap": "bounded",
-  "editor.fontSize": 15.5,
   "editor.minimap.autohide": true,
   "editor.wordWrapColumn": 250,
   "editor.inlineSuggest.suppressSuggestions": true,
@@ -37,17 +27,70 @@
   //   "quickfix.biome": "explicit",
   //   "source.organizeImports.biome": "explicit"
   // }
-  "editor.fontFamily": "Brass Mono Regular, iosevka, Operator Mono, Fira Code iScript, MonoLisa, Victor Mono, Fira Code, JetBrains Mono, monofur for powerline, Meslo LG M Regular for Powerline, Range, Source Code Pro, Anonymous Pro, 'Courier New', monospace ",
+  "editor.fontFamily": "'Fira Code Retina','Brass Mono Regular', 'Hack Nerd Font', iosevka, Operator Mono, Fira Code iScript, MonoLisa, Victor Mono, Fira Code, JetBrains Mono, monofur for powerline, Meslo LG M Regular for Powerline, Range, Source Code Pro, Anonymous Pro, 'Courier New', monospace ",
+  "editor.fontSize": 15,
+  "editor.fontWeight": 450,
+  "editor.lineHeight": 26,
+  "editor.folding": true,
+  "editor.glyphMargin": true,
+  "editor.guides.indentation": false,
+  // "editor.scrollbar.horizontal": "hidden",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.wordWrap": "on",
+  "editor.stickyScroll.enabled": true,
+  "editor.quickSuggestionsDelay": 5,
+  "editor.foldingStrategy": "indentation",
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.snippetSuggestions": "bottom",
+  "editor.suggest.showStatusBar": true,
+  "editor.cursorBlinking": "expand",
+  "editor.quickSuggestions": {
+    "strings": "on",
+    "comments": "on"
+  },
+  /** ------------ Workbench Settings ------------ **/
   "workbench.editor.enablePreview": false,
-  "html.format.wrapLineLength": 250,
-  "git.suggestSmartCommit": false,
-  "git.autofetch": true,
-  "prettier.enableDebugLogs": true,
-  "files.autoSave": "afterDelay",
-  "files.trimTrailingWhitespace": true,
-  "files.trimFinalNewlines": true,
-  "terminal.integrated.macOptionIsMeta": true,
+  "workbench.colorCustomizations": {
+    "inlineparameters.annotationBackground": "#282A3600",
+    "inlineparameters.annotationForeground": "#7b82af",
+    "scrollbar.shadow": "#24292e00"
+  },
+  "workbench.editorLargeFileConfirmation": 10024,
+  "workbench.layoutControl.enabled": false,
+  // "workbench.editor.showTabs": "single",
+  "workbench.tree.indent": 16,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.startupEditor": "none",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
+  // Monokai Pro (Filter Ristretto) | Material Theme Ocean High Contrast | One Dark Pro* Darker | Bearded Monokai | Gruvbox
+  "workbench.colorTheme": "GitHub Dark Default",
+  /** ------------ Breadcrumbs Configurations ------------ **/
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.symbolPath": "off",
+  "breadcrumbs.filePath": "on",
+  /** ------------ Terminal Configurations ------------ **/
+  "terminal.integrated.fontFamily": "'MesloLGS NF', 'Hack Nerd Font', Monospace,Iosevka Term Slab, Iosevka Term,  CaskaydiaCove NFM",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.lineHeight": 1,
+  "terminal.explorerKind": "external",
+  "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.env.linux": {},
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  /** ------------ Git Settings ------------ **/
+  "git.suggestSmartCommit": true,
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
+  /** ------------ Prettier Settings ------------ **/
+  "prettier.enableDebugLogs": true,
   "prettier.useTabs": false,
   "prettier.semi": true,
   "prettier.singleQuote": true,
@@ -59,10 +102,27 @@
   "prettier.printWidth": 200,
   "prettier.tabWidth": 2,
   "prettier.useEditorConfig": false,
-  "json.maxItemsComputed": 20000,
-  "css.validate": true,
-  "editor.foldingStrategy": "indentation",
-  "diffEditor.diffAlgorithm": "advanced",
+  /** ------------ Files Settings ------------ **/
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.autoSaveDelay": 400,
+  "files.associations": {
+    ".js": "javascriptreact",
+    "*.jsx": "javascriptreact",
+    // "*.css": "tailwindcss",
+    "*.astro": "astro"
+  },
+  /** ------------ Language-Specific Settings ------------ **/
+  /** ------------ HTML Formatting ------------ **/
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
+  "html.format.wrapLineLength": 250,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
   "[typescript]": {
     "editor.defaultFormatter": "biomejs.biome",
     "editor.formatOnSave": true,
@@ -149,8 +209,14 @@
   "[tailwindcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "git.openRepositoryInParentFolders": "never",
-  "diffEditor.codeLens": true,
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  /** ------------ JSON Settings ------------ **/
+  "json.maxItemsComputed": 20000,
+  "json.format.keepLines": false,
+  /** ------------ CSS Settings ------------ **/
+  "css.validate": true,
   "cssPeek.peekFromLanguages": [
     "html",
     "django-html",
@@ -177,6 +243,7 @@
     "svelte",
     "css"
   ],
+  /** ------------ TailwindCSS Settings ------------ **/
   "tailwindCSS.includeLanguages": {
     "html": "html",
     "javascript": "javascript",
@@ -184,50 +251,20 @@
     "astro": "astro"
   },
   "tailwindCSS.emmetCompletions": true,
-  "editor.quickSuggestions": {
-    "strings": "on",
-    "comments": "on"
+  /** ------------ Diff Editor Settings ------------ **/
+  "diffEditor.diffAlgorithm": "advanced",
+  "diffEditor.codeLens": true,
+  /** ------------ Emmet Settings ------------ **/
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    // "typescriptreact": "html",
+    "astro": "html"
   },
-  "terminal.integrated.fontFamily": "Iosevka Term Slab, Iosevka Term,  CaskaydiaCove NFM",
-  "terminal.explorerKind": "external",
-  "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "terminal.integrated.env.linux": {},
-  "terminal.integrated.env.windows": {},
-  "json.format.keepLines": false,
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.tree.indent": 5,
-  "files.associations": {
-    ".js": "javascriptreact",
-    "*.jsx": "javascriptreact",
-    // "*.css": "tailwindcss",
-    "*.astro": "astro"
-  },
-  "[astro]": {
-    "editor.defaultFormatter": "astro-build.astro-vscode"
-  },
-  "editor.stickyScroll.enabled": false,
-  "indentRainbow.ignoreErrorLanguages": [
-    "*"
-  ],
-  "indentRainbow.indicatorStyle": "light",
-  "indentRainbow.lightIndicatorStyleLineWidth": 1,
-  "indentRainbow.colors": [
-    "rgba(255,255,64,0.3)",
-    "rgba(127,255,127,0.3)",
-    "rgba(255,127,255,0.3)",
-    "rgba(79,236,236,0.3)"
-  ],
-  "workbench.startupEditor": "none",
-  "window.restoreFullscreen": true,
-  "accessibility.underlineLinks": true,
-  "accessibility.hideAccessibleView": true,
-  "editor.quickSuggestionsDelay": 5,
-  "editor.unicodeHighlight.invisibleCharacters": false,
+  "emmet.triggerExpansionOnTab": true,
+  /** ------------ TypeScript Settings ------------ **/
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.iconTheme": "material-icon-theme",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  /** ------------ Extension Settings ------------ **/
   "codeium.enableConfig": {
     "*": true,
     "terminal": true,
@@ -256,63 +293,18 @@
     ]
   },
   "todo-tree.regex.regex": "(//)\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
-  "editor.suggest.shareSuggestSelections": true,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescriptreact": "html",
-    "astro": "html"
-  },
-  "emmet.triggerExpansionOnTab": true,
-  "editor.snippetSuggestions": "bottom",
   "vscord.behaviour.debug": true,
-  "remote.autoForwardPortsSource": "hybrid",
-  // Monokai Pro (Filter Ristretto) | Material Theme Ocean High Contrast | One Dark Pro* Darker | Bearded Monokai | Gruvbox
-  "workbench.colorTheme": "GitHub Dark Default",
+  "vscord.status.idle.disconnectOnIdle": true,
+  "vscord.status.idle.resetElapsedTime": true,
+  "vscord.behaviour.statusBarAlignment": "Left",
   "quokka.automaticRestart": true,
-  "[ruby]": {
-    "editor.defaultFormatter": "Shopify.ruby-lsp",
-    "editor.formatOnSave": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.semanticHighlighting.enabled": true,
-    "editor.formatOnType": true
-  },
-  "ruby.rubocop.executePath": "/home/ridwan/.rbenv/shims/",
-  "ruby.rubocop.onSave": true,
-  "security.allowedUNCHosts": [
-    "wsl.localhost"
-  ],
-  "workbench.sideBar.location": "right",
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "javascript": false,
-    "html": false
-  },
-  "terminal.integrated.suggest.enabled": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "files.autoSaveDelay": 400,
-  "cody.commandCodeLenses": true,
-  "cody.suggestions.mode": "off",
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "inlineChat.hideOnRequest": true,
-  "inlineChat.enableV2": true,
+  "previewServer.port": 8085,
+  "svgPreview.autoOpen": false,
   "stylelint.validate": [
     "css",
     "scss",
     "tailwindcss"
   ],
-  "breadcrumbs.enabled": false,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "vscord.status.idle.disconnectOnIdle": true,
-  "vscord.status.idle.resetElapsedTime": true,
-  "editor.suggest.showStatusBar": true,
-  "previewServer.port": 8085,
-  "vscord.behaviour.statusBarAlignment": "Left",
-  "application.shellEnvironmentResolutionTimeout": 30,
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",
@@ -321,6 +313,52 @@
       "savePathReplacementPairs": null,
     }
   ],
-  "svgPreview.autoOpen": false,
-  "editor.cursorBlinking": "expand",
+  /** ------------ Indent Rainbow Settings ------------ **/
+  "indentRainbow.ignoreErrorLanguages": [
+    "*"
+  ],
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 1,
+  "indentRainbow.colors": [
+    "rgba(255,255,64,0.3)",
+    "rgba(127,255,127,0.3)",
+    "rgba(255,127,255,0.3)",
+    "rgba(79,236,236,0.3)"
+  ],
+  /** ------------ GitHub Copilot Settings ------------ **/
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "javascript": false,
+    "html": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  /** ------------ Inline Chat Settings ------------ **/
+  "inlineChat.hideOnRequest": true,
+  "inlineChat.enableV2": true,
+  /** ------------ Security & System Settings ------------ **/
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+  "remote.autoForwardPortsSource": "hybrid",
+  "accessibility.underlineLinks": true,
+  "accessibility.hideAccessibleView": true,
+  "application.shellEnvironmentResolutionTimeout": 30,
+  /** ------------ Window Settings ------------ **/
+  "window.restoreFullscreen": true,
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
+  /** ------------ Custom CSS ------------ **/
+  "vscode_custom_css.imports": [
+    "file:///C:/Users/ridwan/.vscode/vscode-custom/style.css",
+    "file:///C:/Users/ridwan/.vscode/vscode-custom/script.js"
+  ],
+  "biome.suggestInstallingGlobally": false,
+  /** Explorer **/
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "update.mode": "none"
 }
