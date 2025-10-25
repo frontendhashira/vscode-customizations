@@ -27,9 +27,9 @@
   //   "quickfix.biome": "explicit",
   //   "source.organizeImports.biome": "explicit"
   // }
-  "editor.fontFamily": "'Fira Code Retina','Brass Mono Regular', 'Hack Nerd Font', iosevka, Operator Mono, Fira Code iScript, MonoLisa, Victor Mono, Fira Code, JetBrains Mono, monofur for powerline, Meslo LG M Regular for Powerline, Range, Source Code Pro, Anonymous Pro, 'Courier New', monospace ",
+  "editor.fontFamily": "JetBrains Mono, 'Fira Code Retina', 'Hack Nerd Font', iosevka, Operator Mono, Fira Code iScript, MonoLisa, Victor Mono, Fira Code, JetBrains Mono, monofur for powerline, Meslo LG M Regular for Powerline, Range, Source Code Pro, Anonymous Pro, 'Courier New', monospace ",
   "editor.fontSize": 15,
-  "editor.fontWeight": 450,
+  "editor.fontWeight": 300,
   "editor.lineHeight": 26,
   "editor.folding": true,
   "editor.glyphMargin": true,
@@ -38,7 +38,7 @@
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.wordWrap": "on",
-  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.enabled": false,
   "editor.quickSuggestionsDelay": 5,
   "editor.foldingStrategy": "indentation",
   "editor.suggest.shareSuggestSelections": true,
@@ -111,7 +111,6 @@
     ".js": "javascriptreact",
     "*.jsx": "javascriptreact",
     // "*.css": "tailwindcss",
-    "*.astro": "astro"
   },
   /** ------------ Language-Specific Settings ------------ **/
   /** ------------ HTML Formatting ------------ **/
@@ -129,7 +128,6 @@
     "editor.colorDecorators": true,
     "editor.formatOnPaste": true,
     "editor.codeActionsOnSave": {
-      "quickfix.biome": "explicit",
       "source.organizeImports.biome": "explicit",
       "source.action.useSortedAttributes.biome": "explicit",
       "source.action.useSortedKeys.biome": "explicit",
@@ -141,7 +139,6 @@
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.codeActionsOnSave": {
-      "quickfix.biome": "explicit",
       "source.organizeImports.biome": "explicit",
       "source.action.useSortedAttributes.biome": "explicit",
       "source.action.useSortedKeys.biome": "explicit",
@@ -153,7 +150,6 @@
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.codeActionsOnSave": {
-      "quickfix.biome": "explicit",
       "source.organizeImports.biome": "explicit",
       "source.action.useSortedAttributes.biome": "explicit",
       "source.action.useSortedKeys.biome": "explicit",
@@ -165,7 +161,6 @@
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.codeActionsOnSave": {
-      "quickfix.biome": "explicit",
       "source.organizeImports.biome": "explicit",
       "source.action.useSortedAttributes.biome": "explicit",
       "source.action.useSortedKeys.biome": "explicit",
@@ -197,7 +192,6 @@
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.stylelint": "explicit",
-      "quickfix.biome": "explicit",
       "source.action.useSortedProperties.biome": "explicit",
       "source.fixAll.biome": "explicit"
     }
@@ -210,7 +204,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[astro]": {
-    "editor.defaultFormatter": "astro-build.astro-vscode"
+    "editor.defaultFormatter": "astro-build.astro-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
   },
   /** ------------ JSON Settings ------------ **/
   "json.maxItemsComputed": 20000,
@@ -248,7 +244,6 @@
     "html": "html",
     "javascript": "javascript",
     "css": "css",
-    "astro": "astro"
   },
   "tailwindCSS.emmetCompletions": true,
   /** ------------ Diff Editor Settings ------------ **/
@@ -258,7 +253,7 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     // "typescriptreact": "html",
-    "astro": "html"
+    // "astro": "html"
   },
   "emmet.triggerExpansionOnTab": true,
   /** ------------ TypeScript Settings ------------ **/
@@ -269,7 +264,8 @@
     "*": true,
     "terminal": true,
     "motoko": true,
-    "tailwindcss": true
+    "tailwindcss": true,
+    "git-commit": true
   },
   "todo-tree.highlights.useColourScheme": true,
   "todo-tree.highlights.customHighlight": {
@@ -327,7 +323,7 @@
   ],
   /** ------------ GitHub Copilot Settings ------------ **/
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
@@ -360,5 +356,31 @@
   /** Explorer **/
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
-  "update.mode": "none"
+  "update.mode": "none",
+  "editor.accessibilitySupport": "off",
+  //Ignore node_modules
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.git/objects/**": true,
+    "**/.next/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.git": true
+  },
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.currentLine.uncommittedChangesFormat": "✏️ ${ago}",
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    "/tmp/postman-collections-post-response.instructions.md": true,
+    "/tmp/postman-collections-pre-request.instructions.md": true,
+    "/tmp/postman-folder-post-response.instructions.md": true,
+    "/tmp/postman-folder-pre-request.instructions.md": true,
+    "/tmp/postman-http-request-post-response.instructions.md": true,
+    "/tmp/postman-http-request-pre-request.instructions.md": true
+  },
+  "git.ignoreRebaseWarning": true,
+  "postman.mcp.notifications.postmanMCP": false,
+  "git.enableSmartCommit": true
 }

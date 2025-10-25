@@ -1,0 +1,33 @@
+#!/bin/bash
+
+STATE_FILE="$HOME/.git_identity"
+
+# ❌ Remove all currently loaded SSH keys
+ssh-add -D
+
+# Read current identity (default to "sec")
+if [ -f "$STATE_FILE" ]; then
+  current=$(cat "$STATE_FILE")
+else
+  current="sec"
+fi
+
+# Now switch to the OTHER identity
+if [ "$current" == "main" ]; then
+  # 🔁 SWITCHING TO SEC
+  ssh-add ~/.ssh/id_secondary
+  git config user.name "frontendhashira"
+  git config user.email "ridwanyinusa9@gmail.com"
+  echo "sec" > "$STATE_FILE"
+  echo "🔁 Switched to SECONDARY GitHub identity (frontendhashira)"
+else
+  # 🔁 SWITCHING TO MAIN
+  ssh-add ~/.ssh/id_main
+  git config user.name "ridwan"
+  git config user.email "ridwanyinusa15@gmail.com"
+  echo "main" > "$STATE_FILE"
+  echo "🔁 Switched to MAIN GitHub identity (ridwanyinus)"
+fi
+
+# Confirm what SSH key is now loaded
+ssh-add -l
